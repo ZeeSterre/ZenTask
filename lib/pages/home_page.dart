@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Zen Task'),
         centerTitle: true,
-        backgroundColor: Color(0xFFFFF4EC),
+        backgroundColor: Color.fromARGB(255, 249, 248, 243),
         foregroundColor: Color.fromARGB(255, 110, 104, 104),
         actions: [
           IconButton(
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
             child: Opacity(
               opacity: 0.65, // Subtiel effect
               child: Image.asset(
-                'assets/images/background.jpg',
+                'assets/images/background1.jpg',
                 fit: BoxFit.cover,
               ),
             ),
@@ -109,16 +109,21 @@ class _HomePageState extends State<HomePage> {
                         decoration: InputDecoration(
                           hintText: 'Add a new task',
                           filled: true,
-                          fillColor: Colors.green.shade100.withOpacity(0.8),
+                          fillColor: Color.fromARGB(
+                            255,
+                            249,
+                            248,
+                            243,
+                          ).withOpacity(0.8),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Colors.green.shade100,
+                              color: const Color(0xFF6B9080),
                             ),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Colors.green.shade200,
+                              color: const Color(0xFF6B9080),
                             ),
                             borderRadius: BorderRadius.circular(15),
                           ),

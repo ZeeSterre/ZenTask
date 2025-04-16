@@ -34,7 +34,7 @@ class ZenTask extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.green.shade200,
+            color: const Color.fromARGB(255, 165, 188, 166),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Row(
@@ -42,14 +42,14 @@ class ZenTask extends StatelessWidget {
               Checkbox(
                 value: taskCompleted,
                 onChanged: onChanged,
-                checkColor: Colors.green.shade200,
-                activeColor: Colors.white,
+                checkColor: const Color.fromARGB(255, 165, 188, 166),
+                activeColor: Color.fromARGB(255, 249, 248, 243),
                 side: BorderSide(color: Colors.white),
               ),
               Text(
                 taskName,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 249, 248, 243),
                   fontSize: 18,
                   decoration:
                       taskCompleted

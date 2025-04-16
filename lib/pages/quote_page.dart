@@ -64,6 +64,7 @@ class _QuotePageState extends State<QuotePage> {
         title: const Text('Daily Quote'),
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 240, 237, 229),
+        foregroundColor: Color.fromARGB(255, 110, 104, 104),
       ),
       body: Stack(
         children: [
