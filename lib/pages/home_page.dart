@@ -64,6 +64,12 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(context, '/quotes');
             },
           ),
+          IconButton(
+            icon: Icon(Icons.restaurant),
+            onPressed: () {
+              Navigator.pushNamed(context, '/recipes');
+            },
+          ),
         ],
       ),
 
@@ -79,7 +85,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
-          // ✅ Inhoud erbovenop
           Column(
             children: [
               Expanded(
@@ -117,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                           ).withOpacity(0.8),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: const Color(0xFF6B9080),
+                              color: Color.fromARGB(255, 249, 248, 243),
                             ),
                             borderRadius: BorderRadius.circular(15),
                           ),

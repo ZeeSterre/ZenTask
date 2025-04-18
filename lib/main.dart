@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:zentask/pages/home_page.dart';
-import 'package:zentask/pages/quote_page.dart'; // Nieuw toegevoegd
+import 'package:zentask/pages/quote_page.dart';
+import 'package:zentask/pages/recipes_page.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/quotes': (context) => QuotePage(),
+        '/recipes': (context) => Recipes(),
       },
     );
   }
